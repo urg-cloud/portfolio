@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  #contact {
+    width: 100%;
+     background-color: #000;
+    margin-top: 15rem;
+  }
+  
+  .section-header {
+    text-align: center;
+    /* margin: 30px auto; */
+    padding-top: 53px;
+    font: 100 30px 'Oswald', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+  }
+
+  
+  .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    /* max-width: 88%; */
+  }
+  
+  /* Left contact page */
+  .form-horizontal {
+   
+    font-family: 'Lato';
+    font-weight: 400;
+    margin-left: -95px;
+    width: 40%;
+    
+  }
+  
+  .form-control, 
+  textarea {
+    max-width: 550px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px;
+    width: 95%;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    padding: 10px;
+    border: 2px solid rgb(147, 147, 147);
+  }
+  
+  .send-button {
+    margin-top: 20px;
+    height: 34px;
+    width: 84%;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    background-color: #418696;
+ 
+  
+    
+  }
+  .icon-send{
+    color: white;
+    font-size: 20px;
+    fill: black;
+    padding-top: 3px;
+    
+}
+  .alt-send-button {
+   
+    height: 34px;
+    transition: all .2s ease-in-out;
+    background-color: #418696;
+  }
+
+  .send-text {
+    display: block;
+    margin-top: 10px;
+    font: 700 12px 'Lato', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .alt-send-button:hover {
+    transform: translate3d(0px, -29px, 0px);
+  }
+  
+  /* Begin Right Contact Page */
+  .direct-contact-container {
+   
+    margin-top: 40px;
+   margin-right: 150px;
+  }
+  
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+   
+  
+  }
+  
+  .list-item {
+    line-height:8;
+    color: #aaa;
+  }
+  
+  .icon-contact{
+    font-size: 20px;
+    color: white;
+    fill: white;
+}
+.icon{
+    color: white;
+  
+}
+  .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+  }
+  
+  .place {
+    margin-left: 22px;
+  }
+  
+  .phone {
+    margin-left: 15px;
+  }
+  
+  .list-item .gmail {
+    margin-left: 15px;
+    padding-top: -25px;
+  }
+  
+  .contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  /* Social Media Icons */
+  .social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .social-media-list li a {
+    color: #fff;
+    color: red;
+  }
+  
+  .social-media-list li {
+    position: relative; 
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 20px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27,27,27);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+    color: red;
+    
+  }
+  .social-media-list .icon{
+    /* fill: #bcb9b9; */
+    fill: white;
+    font-size: 20px;
+    padding-right: 20px;
+
+  }
+ 
+
+  .social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:hover {
+    background-color: #fff; 
+  }
+  
+  .social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  
+  .social-media-list li:hover a {
+    color: #000;
+  }
+  
+
+  
+  hr {
+    border-color: rgba(255,255,255,.6);
+  }
+  
+  /* Begin Media Queries*/
+  /* @media screen and (max-width: 850px) {
+    .contact-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .direct-contact-container, .form-horizontal {
+      margin: 0 auto;
+    }  
+    
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 300px;
+    }    
+    .social-media-list li {
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+    }
+    .social-media-list li:after {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+  } */
+  
+  /* @media screen and (max-width: 569px) {
+  
+    .direct-contact-container, .form-wrapper {
+      float: none;
+      margin: 0 auto;
+    }  
+    .form-control, textarea {
+      
+      margin: 0 auto;
+    }
+   
+    
+    .name, .email, textarea {
+      width: 280px;
+    } 
+    
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 280px;
+    }  
+    .social-media-list {
+      left: 0;
+    }
+    .social-media-list li {
+      height: 55px;
+      width: 55px;
+      line-height: 55px;
+      font-size: 2rem;
+    }
+    .social-media-list li:after {
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+    }
+    
+  } */
+  
+  .copyright{
+     text-align: center;
+    margin-top:1.5rem;
+  }
+  .copyright p{
+    color: #fff;
+   
+    font-size: 15px;
+    padding-bottom: 10px;
+   
+  }
+  /* @media screen and (max-width: 410px) {
+    .send-button {
+      width: 99%;
+    }
+  } */
+
+  @media  only screen and (min-width: 768px) 
+{
+    .contact-wrapper{
+      justify-content: space-around;
+    }
+    .form-horizontal{
+      margin-left: 5px;
+    }
+    .direct-contact-container{
+      margin-right: 1px;
+    }
+    .send-button{
+      width: 95%;
+    }
+}
+  @media screen and (max-width: 600px) {
+    .about-content {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: auto;
+      width: 90%;
+     
+  }
+  .contact-wrapper {
+   
+    flex-direction: column;
+
+}
+.send-button{
+  width: 96%;
+}
+.form-control, textarea {
+  width: 98%;
+}
+
+  .form-horizontal{
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .direct-contact-container {
+    margin-top: 40px;
+    margin-right: 0px;
+}
+.social-media-list{
+  display: none;
+}
+  }
+  @media  only screen and (min-width: 992px)
+  {
+    .contact-wrapper{
+      justify-content: space-evenly;
+    }
+    .form-horizontal{
+      margin-left: -81px;
+    }
+    .direct-contact-container{
+      margin-right: 166px;
+    }
+    .send-button{
+      width: 83%;
+    }
+  }
